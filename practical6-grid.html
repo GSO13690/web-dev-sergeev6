@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+    <style>
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "hero hero hero"
+        "news news news";
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #234;
+    color: white;
+    padding: 10px 20px;
+    grid-area: header;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 0;
+    grid-area: hero;
+}
+
+.hero img {
+    width: 200px;
+	height: 100px;
+}
+
+.news {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-area: news;
+}
+
+.news-item {
+    border: 2px solid #555;
+    padding: 10px;
+    margin: 10px;
+}
+
+.news-item img {
+    height: 50px;
+	width: 50px;
+}
+
+.news-item h2 {
+    margin-top: 10px;
+}
+
+.news-item p {
+    margin-bottom: 5px;
+}
+
+.read-more {
+    display: block;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.header img {
+    width: 200px; 
+    height: 100px; 
+}
+
+@media (max-width: 760px) {
+    .container {
+        grid-template-areas: 
+            "header"
+            "hero"
+            "news";
+    }
+    .excerpt { display: none; }
+}
+button {
+background-color: lime;
+opacity: 50%;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src ="https://1000logos.net/wp-content/uploads/2021/09/Among-Us-Logo.png" alt="Logo">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="hero">
+            <img src="https://i.fbcd.co/products/original/4c6365c82202f820b4f45e396581998c31976d2e857dca258930e30c583250fb.jpg" alt="Hero Image">
+            <h1>An among us!</h1>
+            <p>Paragraph Text</p>
+        </div>
+        <div class="news">
+            <div class="news-item">
+                <img src="https://w7.pngwing.com/pngs/422/910/png-transparent-among-us-thumbnail.png" alt="News Thumbnail">
+                <h2>An amongeezer!</h2>
+                <p class="meta">News Meta Info</p>
+                <p class="excerpt">Excerpt Text</p>
+                <button>Read More</button>
+            </div>
+            <div class="news-item">
+                <img src="https://w7.pngwing.com/pngs/422/910/png-transparent-among-us-thumbnail.png" alt="News Thumbnail">
+                <h2>Impostor!</h2>
+                <p class="meta">News Meta Info</p>
+                <p class="excerpt">Excerpt Text</p>
+                <button>Read More</button>
+            </div>
+            <div class="news-item">
+                <img src="https://w7.pngwing.com/pngs/422/910/png-transparent-among-us-thumbnail.png" alt="News Thumbnail">
+                <h2>Warning!</h2>
+                <p class="meta">News Meta Info</p>
+                <p class="excerpt">Excerpt Text</p>
+                <button>Read More</button>
+            </div>
+            <div class="news-item">
+                <img src="https://w7.pngwing.com/pngs/422/910/png-transparent-among-us-thumbnail.png" alt="News Thumbnail">
+                <h2>danger!!!</h2>
+                <p class="meta">News Meta Info</p>
+                <p class="excerpt">Excerpt Text</p>
+                <button>Read More</button>
+            </div>			
+        </div>
+    </div>
+</body>
+</html>

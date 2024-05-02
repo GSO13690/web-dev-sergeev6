@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #234; 
+    color: white;
+    padding: 10px 20px;
+}
+.hero img {
+    width: auto;
+    height: 200px;
+	}
+.logo {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.hero {
+border: solid 3px;
+    text-align: center;
+    padding: 50px 0;
+}
+.top-news-content {
+border: solid 3px;
+    text-align: center;
+    padding: 50px 0;
+	}
+top-news img {
+width: auto;
+height: 200px;
+}
+.news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+.news-item {
+    border: 1px solid #ccc; 
+    padding: 10px;
+    margin: 10px;
+    flex: 1 0 calc(33.33% - 20px);
+}
+
+.news-item img {
+    max-width: 100%;
+    height: 200px; 
+}
+.header img {
+    width: 200px; 
+    height: 100px; 
+}
+
+.news-item h2 {
+    margin-top: 10px;
+}
+
+.news-item p {
+    margin-bottom: 5px;
+}
+
+.read-more {
+    display: block;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+button {
+    background-color: lime;
+    opacity: 50%;
+}
+
+top-news {
+border: solid 3px;
+
+aside {
+    order: -1; /* Move sidebar to the beginning */
+}
+
+.sidebar {
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 760px) {
+.news-item {
+flex: 1 0 100%;
+}
+.excerpt { 
+display: none; 
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://1000logos.net/wp-content/uploads/2021/09/Among-Us-Logo.png" alt="Logo">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+		<section class="top-news">
+        <div class="top-news-content">
+            <img src="News.png" alt="Top News Image">
+<h2>An among!</h2>
+                <p class="meta">News Meta Info</p>
+                <p class="excerpt">Excerpt Text</p>
+                <button>Read More</button>
+        </div>
+    </section>
+        <div class="hero">
+            <img src="https://i.fbcd.co/products/original/4c6365c82202f820b4f45e396581998c31976d2e857dca258930e30c583250fb.jpg" alt="Hero Image">
+            <h1>An among us!</h1>
+            <p>Paragraph Text</p>
+        </div>
+        <div class="news">
+            <div class="news-item">
+                <img src="https://w7.pngwing.com/pngs/422/910/png-transparent-among-us-thumbnail.png" alt="News Thumbnail">
+                <h2>An amongeezer!</h2>
+                <p class="meta">News Meta Info</p>
+                <p class="excerpt">Excerpt Text</p>
+                <button>Read More</button>
+            </div>
+            <div class="news-item">
+                <img src="https://w7.pngwing.com/pngs/422/910/png-transparent-among-us-thumbnail.png" alt="News Thumbnail">
+                <h2>Impostor!</h2>
+                <p class="meta">News Meta Info</p>
+                <p class="excerpt">Excerpt Text</p>
+                <button>Read More</button>
+            </div>
+            <div class="news-item">
+                <img src="https://w7.pngwing.com/pngs/422/910/png-transparent-among-us-thumbnail.png" alt="News Thumbnail">
+                <h2>Warning!</h2>
+                <p class="meta">News Meta Info</p>
+                <p class="excerpt">Excerpt Text</p>
+                <button>Read More</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
